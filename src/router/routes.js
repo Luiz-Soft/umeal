@@ -31,4 +31,16 @@ export default [
       title: "Restaurantes",
     },
   },
+  {
+    path: "/restaurant",
+    name: "restaurantDetails",
+    component: () => import("../views/RestaurantDetails"),
+    props: (route) => ({
+      country: route.params.country,
+      countryCode: route.params.countryCode,
+    }),
+    meta: {
+      title: "Restaurantes",
+    },
+  },
 ];
