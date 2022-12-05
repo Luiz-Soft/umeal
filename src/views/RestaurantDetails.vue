@@ -158,7 +158,7 @@
 					id="initial-modal-button"
 					@click.prevent="goToLink()"
 				>
-					O que achastes?
+					Nos dê seu feedback
 				</button>
 			</div></b-modal
 		>
