@@ -69,18 +69,18 @@
 		</ul>
 
 		<VueSlickCarousel v-bind="settings">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupon.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Bitoque.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Hamburguer.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Kebab.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Pizza.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Bitoque.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Hamburguer.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Kebab.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Pizza.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Bitoque.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Hamburguer.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Kebab.png" alt="Girl in a jacket" width="300" height="140">
+			<img src="../assets/coupons/Pizza.png" alt="Girl in a jacket" width="300" height="140">
 		</VueSlickCarousel>
 	</div>
 </template>
