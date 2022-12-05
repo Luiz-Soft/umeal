@@ -142,17 +142,23 @@
 				height="140"
 			/>
 		</VueSlickCarousel>
-		<b-modal v-model="modalVisibility" :title="modalTitle" hide-footer="true"
+		<b-modal
+			v-model="modalVisibility"
+			:title="'AVALIE NOSSA APLICAÇÃO'"
+			hide-footer="true"
 			><div class="modal-container">
 				<SelectLanguage />
-				<p v-html="$t('initial-modal-message')"></p>
+				<p>
+					Este foi o caso de uso de
+					<strong> visualizar um Restaurante</strong> do app UMeal
+				</p>
 				<button
 					type="button"
 					class="btn btn-secondary m-2"
 					id="initial-modal-button"
-					@click.prevent="closeModal()"
+					@click.prevent="goToLink()"
 				>
-					{{ $t('initial-modal-button-message') }}
+					O que achastes?
 				</button>
 			</div></b-modal
 		>
@@ -176,8 +182,19 @@
 					rows: 2,
 					slidesPerRow: 1,
 				},
-				modalVisibility: true,
+				modalVisibility: false,
 			};
+		},
+		mounted() {
+			setTimeout(this.showModal, 5000);
+		},
+		methods: {
+			goToLink() {
+				window.open('https://forms.gle/Nmo89s8TpvS3UMtT7');
+			},
+			showModal() {
+				this.modalVisibility = true;
+			},
 		},
 	};
 </script>

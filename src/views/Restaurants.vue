@@ -95,6 +95,9 @@
 			goTo(pageName) {
 				this.$router.push({ name: pageName });
 			},
+			closeModal() {
+				this.modalVisibility = false;
+			},
 		},
 	};
 </script>
