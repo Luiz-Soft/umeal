@@ -1,10 +1,10 @@
 export default [
   {
     path: "/",
-    name: "coupons",
-    component: () => import("../views/Coupons"),
+    name: "restaurants",
+    component: () => import("../views/Restaurants"),
     meta: {
-      title: "Coupons",
+      title: "restaurants",
     },
   },
   {

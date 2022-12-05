@@ -69,19 +69,93 @@
 		</ul>
 
 		<VueSlickCarousel v-bind="settings">
-			<img src="../assets/coupons/Bitoque.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Hamburguer.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Kebab.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Pizza.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Bitoque.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Hamburguer.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Kebab.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Pizza.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Bitoque.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Hamburguer.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Kebab.png" alt="Girl in a jacket" width="300" height="140">
-			<img src="../assets/coupons/Pizza.png" alt="Girl in a jacket" width="300" height="140">
+			<img
+				src="../assets/coupons/Bitoque.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Hamburguer.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Kebab.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Pizza.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Bitoque.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Hamburguer.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Kebab.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Pizza.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Bitoque.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Hamburguer.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Kebab.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
+			<img
+				src="../assets/coupons/Pizza.png"
+				alt="Girl in a jacket"
+				width="300"
+				height="140"
+			/>
 		</VueSlickCarousel>
+		<b-modal v-model="modalVisibility" :title="modalTitle" hide-footer="true"
+			><div class="modal-container">
+				<SelectLanguage />
+				<p v-html="$t('initial-modal-message')"></p>
+				<button
+					type="button"
+					class="btn btn-secondary m-2"
+					id="initial-modal-button"
+					@click.prevent="closeModal()"
+				>
+					{{ $t('initial-modal-button-message') }}
+				</button>
+			</div></b-modal
+		>
 	</div>
 </template>
 
@@ -99,9 +173,10 @@
 					infinite: true,
 					slidesToShow: 3,
 					speed: 500,
-					rows:2,
+					rows: 2,
 					slidesPerRow: 1,
 				},
+				modalVisibility: true,
 			};
 		},
 	};
